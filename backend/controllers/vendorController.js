@@ -7,11 +7,12 @@ import Service from '../models/Service.js'
 // @route   GET /api/vendors
 // @access  Public
 export const getVendors = asyncHandler(async (req, res) => {
-  const { search, category, minRating, page = 1, limit = 12 } = req.query
+ const { search, category, minRating, city, page = 1, limit = 12 } = req.query
 
-  const query = { isVerified: true, isBlocked: false }
+const query = { isVerified: true, isBlocked: false }
 
-  if (minRating) query.rating = { $gte: Number(minRating) }
+if (minRating) query.rating = { $gte: Number(minRating) }
+if (city) query.serviceAreas = { $in: [new RegExp(city, 'i')] }
 
   let vendors = await Vendor.find(query)
     .populate('userId', 'name email phone')

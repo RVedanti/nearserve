@@ -99,7 +99,11 @@ const LoginPage = () => {
                 </button>
               </div>
             </div>
-
+            <div className="text-right">
+  <Link to="/forgot-password" className="text-sm text-brand hover:underline font-medium">
+    Forgot Password?
+  </Link>
+</div>
             {error && (
               <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-sm">{error}</div>
             )}

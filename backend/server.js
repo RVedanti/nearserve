@@ -14,6 +14,7 @@ import bookingRoutes  from './routes/bookingRoutes.js'
 import reviewRoutes   from './routes/reviewRoutes.js'
 import categoryRoutes from './routes/categoryRoutes.js'
 import adminRoutes    from './routes/adminRoutes.js'
+import chatRoute      from './routes/chatRoute.js'
 
 // Connect to MongoDB
 connectDB()
@@ -36,6 +37,7 @@ app.use('/api/bookings',   bookingRoutes)
 app.use('/api/reviews',    reviewRoutes)
 app.use('/api/categories', categoryRoutes)
 app.use('/api/admin',      adminRoutes)
+app.use('/api',            chatRoute)
 
 // Health check
 app.get('/', (req, res) => {

@@ -4,6 +4,8 @@ import { CityProvider } from './context/CityContext'
 import { ProtectedRoute, PublicOnlyRoute } from './components/common/ProtectedRoute'
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
+import ForgotPasswordPage from './pages/auth/ForgotPasswordPage'
+import ChatBot from "./components/common/Chatbox"; 
 
 // Public pages
 import LandingPage from './pages/public/LandingPage'
@@ -38,7 +40,9 @@ const MainLayout = ({ children }) => (
     <Navbar />
     <div className="flex-1">{children}</div>
     <Footer />
+    <ChatBot />
   </div>
+  
 )
 
 function App() {
@@ -55,7 +59,7 @@ function App() {
             {/* Auth */}
             <Route path="/login" element={<PublicOnlyRoute><LoginPage /></PublicOnlyRoute>} />
             <Route path="/register" element={<PublicOnlyRoute><RegisterPage /></PublicOnlyRoute>} />
-
+            <Route path="/forgot-password" element={<PublicOnlyRoute><ForgotPasswordPage /></PublicOnlyRoute>} />
             {/* User Dashboard */}
             <Route path="/dashboard" element={<ProtectedRoute roles={['user']}><UserDashboard /></ProtectedRoute>}>
               <Route index element={<UserOverview />} />
@@ -100,5 +104,4 @@ function App() {
     </BrowserRouter>
   )
 }
-
 export default App
