@@ -144,6 +144,10 @@ export const resetPassword = asyncHandler(async (req, res) => {
   const { email, otp, newPassword } = req.body
 
   const user = await User.findOne({ email })
+  console.log("User found:", !!user);
+   if (user) {
+      console.log("Password match:", await user.matchPassword(password));
+}
 
   if (!user || user.resetOtp !== otp) {
     res.status(400)
