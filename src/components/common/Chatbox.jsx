@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import API from "../../services/api";
 
 export default function ChatBot() {
   const [open, setOpen] = useState(false);
@@ -17,11 +17,22 @@ export default function ChatBot() {
     setLoading(true);
 
     try {
-      const res = await axios.post("/api/chat", { message: input });
+      const res = await API.post("/chat", {
+          message: input,
+  });
       setMessages((prev) => [...prev, { from: "bot", text: res.data.reply }]);
-    } catch {
-      setMessages((prev) => [...prev, { from: "bot", text: "Sorry, something went wrong!" }]);
-    }
+    }  catch (err) {
+  console.error(err);
+  console.log(err.response?.data);
+
+  setMessages((prev) => [
+    ...prev,
+    {
+      from: "bot",
+      text: "Sorry, something went wrong!",
+    },
+  ]);
+}
     setLoading(false);
   };
 
