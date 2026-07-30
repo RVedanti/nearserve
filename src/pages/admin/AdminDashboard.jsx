@@ -37,7 +37,9 @@ export const AdminDashboard = () => {
               <span className="font-bold text-red-600 text-sm">A</span>
             </div>
             <div>
-              <p className="font-semibold text-gray-900 text-sm">Admin</p>
+              <p className="font-semibold text-red-600 text-lg">
+  ADMIN TEST
+</p>
               <span className="badge badge-red text-xs">Admin Panel</span>
             </div>
           </div>
