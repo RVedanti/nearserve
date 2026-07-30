@@ -1,245 +1,416 @@
 # 📍 NearServe — Hyperlocal Services Marketplace
 
-> A full-stack web application that connects users with verified local service providers in their city, with real-time booking management and role-based dashboards.
+> A full-stack web application that connects users with verified local service providers in their city, with real-time booking management ,role-based dashboards, AI-powered platform ,OTP authentication, and live deployment.
 
 ---
 
 ## 🌐 Live Demo
-> Coming soon after deployment
+
+🔗 **Live Website:** https://nearserve-two.vercel.app/
+
+📂 **GitHub Repository:** https://github.com/RVedanti/nearserve
+
+---
+# 📸 Application Screenshots
+
+## 🏠 Homepage
+
+<p align="center">
+  <img src="./screenshots/homepage/img1.png" width="32%">
+  <img src="./screenshots/homepage/img2.png" width="32%">
+  <img src="./screenshots/homepage/img3.png" width="32%">
+</p>
 
 ---
 
-## 📸 Screenshots
+## 🔐 Authentication
 
-> Add screenshots of your app here after deployment
+### Login, Signup & Forgot Password
+
+<p align="center">
+  <img src="./screenshots/features/login.png" width="32%">
+  <img src="./screenshots/features/signup.png" width="32%">
+  <img src="./screenshots/features/forgotpassword.png" width="32%">
+</p>
 
 ---
 
-## 🚀 Features
+## 🤖 AI Chatbot
 
-### 👤 User
-- Register and login with JWT authentication
-- Select city (Mumbai / Nanded) for hyperlocal filtering
-- Browse and search verified vendors by category
-- Book services with date, time and address
-- View booking history with status tracking
+<p align="center">
+  <img src="./screenshots/features/chatbot.png" width="60%">
+</p>
+
+---
+
+## 📅 Booking & Reviews
+
+<p align="center">
+  <img src="./screenshots/features/booking.png" width="48%">
+  <img src="./screenshots/features/review.png" width="48%">
+</p>
+
+---
+
+## 👤 User Dashboard
+
+<p align="center">
+  <img src="./screenshots/user/overviewpage.png" width="48%">
+  <img src="./screenshots/user/mybookings.png" width="48%">
+</p>
+
+<p align="center">
+  <img src="./screenshots/user/profilepage.png" width="48%">
+</p>
+
+---
+
+## 🧑‍🔧 Vendor Dashboard
+
+<p align="center">
+  <img src="./screenshots/service_provider/list.png" width="48%">
+  <img src="./screenshots/service_provider/overview.png" width="48%">
+</p>
+
+<p align="center">
+  <img src="./screenshots/service_provider/services.png" width="48%">
+  <img src="./screenshots/service_provider/profile.png" width="48%">
+</p>
+
+---
+
+## 👨‍💼 Admin Dashboard
+
+<p align="center">
+  <img src="./screenshots/admin/analytics.png" width="48%">
+  <img src="./screenshots/admin/managevendors.png" width="48%">
+</p>
+
+<p align="center">
+  <img src="./screenshots/admin/categories.png" width="48%">
+  <img src="./screenshots/admin/all_bookings.png" width="48%">
+</p>
+---
+
+# ✨ Features
+
+## 👤 User
+- Register & Login with JWT Authentication
+- Forgot Password using OTP Email Verification
+- Select city (Mumbai / Nanded)
+- Browse verified vendors by category
+- Search & filter vendors
+- Book services with date, time & address
+- Track booking status (Pending → Accepted → Completed)
 - Cancel pending bookings
-- Leave star ratings and reviews after service completion
+- View booking history
+- Leave ratings & reviews
+- AI Chatbot Assistant for platform guidance
 
-### 🏪 Vendor
-- Register as a vendor and create a business profile
-- Add, edit and remove services with pricing
-- View and manage incoming bookings
-- Accept, reject or mark bookings as completed
-- Track total revenue and booking statistics
+---
+
+## 🏪 Vendor
+- Vendor Registration & Login
+- Create and manage business profile
+- Add, edit & delete services
+- Accept/Reject bookings
+- Mark bookings as completed
+- Revenue Dashboard
 - View customer reviews
 
-### 👨‍💼 Admin
-- Analytics dashboard with platform-wide stats
-- Approve or block vendor profiles
+---
+
+## 👨‍💼 Admin
+- Dashboard with platform analytics
+- Approve or block vendors
+- Manage users
 - Manage service categories
-- View all users and bookings
+- View all bookings
+- Monitor overall platform activity
 
 ---
 
-## 🛠️ Tech Stack
+# 🤖 AI Chatbot Assistant
 
-### Frontend
+Integrated **Google Gemini API** to provide an AI-powered assistant that helps users with:
+
+- Service recommendations
+- Vendor-related queries
+- Booking assistance
+- General platform guidance
+
+---
+
+# 🔐 Forgot Password
+
+Secure password recovery using **OTP Email Verification**.
+
+### Workflow
+
+```
+Enter Email
+      ↓
+Receive OTP
+      ↓
+Verify OTP
+      ↓
+Create New Password
+```
+
+OTP automatically expires after a limited duration for enhanced security.
+
+---
+
+# 📅 Booking Workflow
+
+```
+Pending
+    ↓
+Accepted
+    ↓
+Completed
+```
+
+Users can monitor booking progress in real time.
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
 | Technology | Purpose |
-|---|---|
-| React 18 | UI library |
-| Vite | Build tool |
-| React Router v6 | Client-side routing |
+|------------|---------|
+| React.js | UI Development |
+| Vite | Build Tool |
 | Tailwind CSS | Styling |
-| Axios | HTTP client |
+| React Router v6 | Routing |
+| Axios | API Requests |
+| Context API | State Management |
 | Lucide React | Icons |
-| Context API | Global state management |
-
-### Backend
-| Technology | Purpose |
-|---|---|
-| Node.js | Runtime environment |
-| Express.js | Web framework |
-| MongoDB | NoSQL database |
-| Mongoose | ODM for MongoDB |
-| JWT | Authentication |
-| bcryptjs | Password hashing |
 
 ---
 
-## 📁 Project Structure
+## Backend
+
+| Technology | Purpose |
+|------------|---------|
+| Node.js | Runtime |
+| Express.js | Backend Framework |
+| REST API | API Development |
+| JWT | Authentication |
+| bcryptjs | Password Encryption |
+| Nodemailer | OTP Email Service |
+
+---
+
+## Database
+
+| Technology | Purpose |
+|------------|---------|
+| MongoDB Atlas | Cloud Database |
+| Mongoose | ODM |
+
+---
+
+## AI & Tools
+
+- Google Gemini API
+- Git
+- GitHub
+- Postman
+- Render
+- Vercel
+
+---
+
+# 📂 Project Structure
 
 ```
 nearserve/
+│
 ├── backend/
-│   ├── config/          # Database connection
-│   ├── controllers/     # Business logic
-│   ├── middleware/      # Auth & error middleware
-│   ├── models/          # Mongoose schemas
-│   ├── routes/          # API route definitions
-│   ├── utils/           # Helper functions
-│   ├── seed.js          # Database seeder
-│   └── server.js        # Entry point
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── seed.js
+│   └── server.js
 │
 ├── src/
-│   ├── components/      # Reusable UI components
-│   │   ├── common/      # Navbar, Footer, etc.
-│   │   └── user/        # User-specific components
-│   ├── context/         # AuthContext, CityContext
+│   ├── components/
+│   ├── context/
 │   ├── pages/
-│   │   ├── admin/       # Admin dashboard pages
-│   │   ├── auth/        # Login & Register
-│   │   ├── public/      # Landing, Vendor listing
-│   │   ├── user/        # User dashboard
-│   │   └── vendor/      # Vendor dashboard
-│   ├── services/        # API call functions
-│   └── App.jsx          # Root component
+│   │   ├── admin/
+│   │   ├── auth/
+│   │   ├── public/
+│   │   ├── user/
+│   │   └── vendor/
+│   ├── services/
+│   └── App.jsx
+│
+└── README.md
 ```
 
 ---
 
-## 🔌 API Endpoints
+# 🔌 API Endpoints
 
-### Auth
-| Method | Endpoint | Access | Description |
-|---|---|---|---|
-| POST | /api/auth/register | Public | Register user/vendor |
-| POST | /api/auth/login | Public | Login & get JWT |
-| GET | /api/auth/me | Private | Get current user |
-
-### Vendors
-| Method | Endpoint | Access | Description |
-|---|---|---|---|
-| GET | /api/vendors | Public | List verified vendors |
-| GET | /api/vendors/:id | Public | Get vendor details |
-| POST | /api/vendors/profile | Vendor | Create profile |
-| PUT | /api/vendors/profile | Vendor | Update profile |
-| GET | /api/vendors/revenue | Vendor | Get revenue stats |
-
-### Bookings
-| Method | Endpoint | Access | Description |
-|---|---|---|---|
-| POST | /api/bookings | User | Create booking |
-| GET | /api/bookings/my | User | Get my bookings |
-| PATCH | /api/bookings/:id/cancel | User | Cancel booking |
-| PATCH | /api/vendors/bookings/:id/accept | Vendor | Accept booking |
-| PATCH | /api/vendors/bookings/:id/complete | Vendor | Complete booking |
-
-### Admin
-| Method | Endpoint | Access | Description |
-|---|---|---|---|
-| GET | /api/admin/stats | Admin | Platform analytics |
-| GET | /api/admin/vendors | Admin | List all vendors |
-| PATCH | /api/admin/vendors/:id/approve | Admin | Approve vendor |
-| PATCH | /api/admin/vendors/:id/block | Admin | Block vendor |
+## Authentication
+- POST `/api/auth/register`
+- POST `/api/auth/login`
+- GET `/api/auth/me`
+- POST `/api/auth/forgot-password`
+- POST `/api/auth/verify-otp`
+- POST `/api/auth/reset-password`
 
 ---
 
-## ⚙️ Getting Started
+## Vendors
+- GET `/api/vendors`
+- GET `/api/vendors/:id`
+- POST `/api/vendors/profile`
+- PUT `/api/vendors/profile`
+- GET `/api/vendors/revenue`
 
-### Prerequisites
-- Node.js v18+
-- MongoDB (local or Atlas)
-- npm or yarn
+---
 
-### 1. Clone the repository
+## Bookings
+- POST `/api/bookings`
+- GET `/api/bookings/my`
+- PATCH `/api/bookings/:id/cancel`
+- PATCH `/api/vendors/bookings/:id/accept`
+- PATCH `/api/vendors/bookings/:id/complete`
+
+---
+
+## Reviews
+- POST `/api/reviews`
+- GET `/api/reviews/:vendorId`
+
+---
+
+## AI Chatbot
+- POST `/api/chat`
+
+---
+
+## Admin
+- GET `/api/admin/stats`
+- GET `/api/admin/vendors`
+- PATCH `/api/admin/vendors/:id/approve`
+- PATCH `/api/admin/vendors/:id/block`
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
 ```bash
 git clone https://github.com/RVedanti/nearserve.git
 cd nearserve
 ```
 
-### 2. Setup Backend
+## Backend
+
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file in the `backend/` folder:
+Create `.env`
+
 ```env
-MONGO_URI=mongodb://localhost:27017/nearserve
-JWT_SECRET=your_jwt_secret_key
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+EMAIL_USER=your_email
+EMAIL_PASS=your_app_password
+GEMINI_API_KEY=your_api_key
 PORT=5000
 ```
 
-### 3. Seed the Database
-```bash
-node seed.js
-```
-This creates 7 categories, 16 vendors (8 Mumbai + 8 Nanded) with services.
+Run backend
 
-### 4. Start the Backend
 ```bash
 npm run dev
 ```
 
-### 5. Setup Frontend
+---
+
+## Frontend
+
 ```bash
-cd ..
 npm install
 ```
 
-Create a `.env` file in the root folder:
+Create `.env`
+
 ```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
-### 6. Start the Frontend
+Run frontend
+
 ```bash
 npm run dev
 ```
 
-Visit `http://localhost:5173`
+---
+
+# 🚀 Deployment
+
+| Component | Platform |
+|-----------|----------|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | MongoDB Atlas |
+
+✅ Live Deployment
+
+✅ GitHub-based CI/CD
 
 ---
 
-## 👥 Test Accounts
+# 🗄️ Database Collections
 
-### Admin
-| Email | Password |
-|---|---|
-| admin@nearserve.com | Admin@123 |
-
-### Seeded Vendors (Nanded)
-| Email | Password | Business |
-|---|---|---|
-| lata@nearserve.com | Vendor@123 | Lata Tiffin Service |
-| kavita@nearserve.com | Vendor@123 | Kavita Home Care |
-| ganesh@nearserve.com | Vendor@123 | Kulkarni Plumbers |
-
-### Seeded Vendors (Mumbai)
-| Email | Password | Business |
-|---|---|---|
-| rahul@nearserve.com | Vendor@123 | Rahul Clean Pro |
-| meena@nearserve.com | Vendor@123 | Meena Home Kitchen |
-| ramesh@nearserve.com | Vendor@123 | Nair Cool Tech |
+- Users
+- Vendors
+- Categories
+- Services
+- Bookings
+- Reviews
 
 ---
 
-## 🗄️ Database Schema
+# 🏙️ Supported Cities
 
-- **Users** — name, email, password (hashed), role, phone, address
-- **Vendors** — userId, businessName, categoryId, serviceAreas, isVerified, rating
-- **Categories** — name, icon
-- **Services** — vendorId, serviceName, price, description
-- **Bookings** — userId, vendorId, serviceId, date, timeSlot, address, status
-- **Reviews** — userId, vendorId, rating, comment
-
----
-
-## 🏙️ Supported Cities
 - Mumbai
 - Nanded
 
-> More cities can be added by updating `SUPPORTED_CITIES` in `src/context/CityContext.jsx`
+---
+
+# 🔮 Future Enhancements
+
+- Online Payments
+- Google Maps Integration
+- Real-time Notifications
+- Vendor Availability Calendar
+- Mobile Application
+- Multi-city Expansion
 
 ---
 
-## 👩‍💻 Built By
+# 👩‍💻 Developer
 
 **Vedanti Rahatikar**
 
+🎓 SGGSIET, Nanded
+
+📂 GitHub: https://github.com/RVedanti/nearserve
+
 ---
 
-## 📄 License
-
-This project is for educational purposes.
+⭐ If you found this project interesting, don't forget to **star the repository!**
