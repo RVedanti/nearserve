@@ -11,72 +11,9 @@
 📂 **GitHub Repository:** https://github.com/RVedanti/nearserve
 
 ---
-# 📸 Application Screenshots
+# Test
 
-## 🏠 Homepage
-
-<p align="center">
-  <img src="./screenshots/homepage/img1.png" width="32%">
-  <img src="./screenshots/homepage/img2.png" width="32%">
-  <img src="./screenshots/homepage/img3.png" width="32%">
-</p>
-
----
-
-## 🔐 Authentication
-
-### Login, Signup & Forgot Password
-
-<p align="center">
-  <img src="./screenshots/features/login.png" width="32%">
-  <img src="./screenshots/features/signup.png" width="32%">
-  <img src="./screenshots/features/forgotpassword.png" width="32%">
-</p>
-
----
-
-## 🤖 AI Chatbot
-
-<p align="center">
-  <img src="./screenshots/features/chatbot.png" width="60%">
-</p>
-
----
-
-## 📅 Booking & Reviews
-
-<p align="center">
-  <img src="./screenshots/features/booking.png" width="48%">
-  <img src="./screenshots/features/review.png" width="48%">
-</p>
-
----
-
-## 👤 User Dashboard
-
-<p align="center">
-  <img src="./screenshots/user/overviewpage.png" width="48%">
-  <img src="./screenshots/user/mybookings.png" width="48%">
-</p>
-
-<p align="center">
-  <img src="./screenshots/user/profilepage.png" width="48%">
-</p>
-
----
-
-## 🧑‍🔧 Vendor Dashboard
-
-<p align="center">
-  <img src="./screenshots/service_provider/list.png" width="48%">
-  <img src="./screenshots/service_provider/overview.png" width="48%">
-</p>
-
-<p align="center">
-  <img src="./screenshots/service_provider/services.png" width="48%">
-  <img src="./screenshots/service_provider/profile.png" width="48%">
-</p>
-
+![Test](./screenshots/homepage/img1.png)
 ---
 
 ## 👨‍💼 Admin Dashboard
