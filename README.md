@@ -28,25 +28,11 @@
 
 ## 🔐 Authentication
 
-<table align="center">
-<tr>
-<td align="center" width="50%">
+| **Signup** | **Login & Forgot Password** |
+|:----------:|:--------------------------:|
+| <img src="screenshots/features/signup.png" width="80%" alt="Signup"/> | <img src="screenshots/features/login.png" width="80%" alt="Login"/><br><br><img src="screenshots/features/forgotpassword.png" width="80%" alt="Forgot Password"/> |
 
-<img src="screenshots/features/signup.png" width="65%" alt="Signup"/>
-
-</td>
-
-<td align="center" width="50%">
-
-<img src="screenshots/features/login.png" width="45%" alt="Login"/>
-
-<br><br>
-
-<img src="screenshots/features/forgotpassword.png" width="45%" alt="Forgot Password"/>
-
-</td>
-</tr>
-</table>
+---
 
 ## 🤖 AI Chatbot
 
