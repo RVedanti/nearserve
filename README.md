@@ -27,22 +27,17 @@
 
 ## 🔐 Authentication
 
-### Login • Signup • Forgot Password
+## 🔐 Authentication
 
-<p align="center">
-  <img src="screenshots/features/login.png" width="32%" alt="Login"/>
-  <img src="screenshots/features/signup.png" width="32%" alt="Signup"/>
-  <img src="screenshots/features/forgotpassword.png" width="32%" alt="Forgot Password"/>
-</p>
-
+| **Signup** | **Login & Forgot Password** |
+|:----------:|:--------------------------:|
+| <img src="screenshots/features/signup.png" width="100%" alt="Signup Page"/> | <img src="screenshots/features/login.png" width="100%" alt="Login Page"/><br><br><img src="screenshots/features/forgotpassword.png" width="100%" alt="Forgot Password Page"/> |
 ---
 
 ## 🤖 AI Chatbot
-
 <p align="center">
-  <img src="screenshots/features/chatbot.png" width="65%" alt="AI Chatbot"/>
+  <img src="screenshots/features/chatbot.png" width="35%" alt="AI Chatbot"/>
 </p>
-
 ---
 
 ## 📅 Booking & Reviews
@@ -84,13 +79,13 @@
 ## 👨‍💼 Admin Dashboard
 
 <p align="center">
-  <img src="screenshots/admin/analytics.png" width="48%" alt="Admin Analytics"/>
-  <img src="screenshots/admin/managevendors.png" width="48%" alt="Manage Vendors"/>
+  <img src="screenshots/admin/analytics.png" width="45%" alt="Analytics"/>
+  <img src="screenshots/admin/managevendors.png" width="45%" alt="Manage Vendors"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/admin/categories.png" width="48%" alt="Categories"/>
-  <img src="screenshots/admin/all_bookings.png" width="48%" alt="All Bookings"/>
+  <img src="screenshots/admin/categories.png" width="45%" alt="Categories"/>
+  <img src="screenshots/admin/all_bookings.png" width="45%" alt="All Bookings"/>
 </p>
 ---
 
