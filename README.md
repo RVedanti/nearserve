@@ -1,92 +1,91 @@
 # 📍 NearServe — Hyperlocal Services Marketplace
 
 > A full-stack web application that connects users with verified local service providers in their city, with real-time booking management ,role-based dashboards, AI-powered platform ,OTP authentication, and live deployment.
-
 ---
-
 ## 🌐 Live Demo
 
 🔗 **Live Website:** https://nearserve-two.vercel.app/
 
 📂 **GitHub Repository:** https://github.com/RVedanti/nearserve
-
----
-
 ---
 # 📸 Application Screenshots
-
+---
 ## 🏠 Homepage
 
 <p align="center">
-  <img src="screenshots/homepage/img1.png" width="32%" alt="Homepage 1"/>
-  <img src="screenshots/homepage/img2.png" width="32%" alt="Homepage 2"/>
-  <img src="screenshots/homepage/img3.png" width="32%" alt="Homepage 3"/>
+  <img src="screenshots/homepage/img1.png" width="42%">
+  <img src="screenshots/homepage/img2.png" width="42%">
+  <img src="screenshots/homepage/img3.png" width="42%">
 </p>
 
 ---
-
-## 🔐 Authentication
 
 ## 🔐 Authentication
 
 | **Signup** | **Login & Forgot Password** |
 |:----------:|:--------------------------:|
-| <img src="screenshots/features/signup.png" width="100%" alt="Signup Page"/> | <img src="screenshots/features/login.png" width="100%" alt="Login Page"/><br><br><img src="screenshots/features/forgotpassword.png" width="100%" alt="Forgot Password Page"/> |
+| <img src="screenshots/features/signup.png" width="100%"> | <img src="screenshots/features/login.png" width="100%"><br><br><img src="screenshots/features/forgotpassword.png" width="100%"> |
+
 ---
 
 ## 🤖 AI Chatbot
+
 <p align="center">
-  <img src="screenshots/features/chatbot.png" width="25%" alt="AI Chatbot"/>
+  <img src="screenshots/features/chatbot.png" width="25%">
 </p>
+
 ---
 
-## 📅 Booking & Reviews
+## 📅 Booking & Review
 
-<p align="center">
-  <img src="screenshots/features/booking.png" width="48%" alt="Booking"/>
-  <img src="screenshots/features/review.png" width="48%" alt="Review"/>
-</p>
+| **Booking** | **Review** |
+|:-----------:|:----------:|
+| <img src="screenshots/features/booking.png" width="100%"> | <img src="screenshots/features/review.png" width="100%"> |
 
 ---
 
 ## 👤 User Dashboard
 
-<p align="center">
-  <img src="screenshots/user/overviewpage.png" width="48%" alt="User Overview"/>
-  <img src="screenshots/user/mybookings.png" width="48%" alt="My Bookings"/>
-</p>
+| **Overview** | **My Bookings** |
+|:------------:|:---------------:|
+| <img src="screenshots/user/overviewpage.png" width="100%"> | <img src="screenshots/user/mybookings.png" width="100%"> |
+
+<br>
 
 <p align="center">
-  <img src="screenshots/user/profilepage.png" width="48%" alt="User Profile"/>
+  <strong>Profile</strong><br><br>
+  <img src="screenshots/user/profilepage.png" width="60%">
 </p>
 
 ---
 
 ## 🧑‍🔧 Vendor Dashboard
 
-<p align="center">
-  <img src="screenshots/service_provider/list.png" width="48%" alt="Vendor List"/>
-  <img src="screenshots/service_provider/overview.png" width="48%" alt="Vendor Overview"/>
-</p>
+| **Service Providers** | **Overview** |
+|:---------------------:|:------------:|
+| <img src="screenshots/service_provider/list.png" width="100%"> | <img src="screenshots/service_provider/overview.png" width="100%"> |
 
-<p align="center">
-  <img src="screenshots/service_provider/services.png" width="48%" alt="Vendor Services"/>
-  <img src="screenshots/service_provider/profile.png" width="48%" alt="Vendor Profile"/>
-</p>
+<br>
+
+| **Services** | **Profile** |
+|:------------:|:-----------:|
+| <img src="screenshots/service_provider/services.png" width="100%"> | <img src="screenshots/service_provider/profile.png" width="100%"> |
 
 ---
 
 ## 👨‍💼 Admin Dashboard
 
-<p align="center">
-  <img src="screenshots/admin/analytics.png" width="45%" alt="Analytics"/>
-  <img src="screenshots/admin/managevendors.png" width="45%" alt="Manage Vendors"/>
-</p>
+| **Analytics** | **Manage Vendors** |
+|:-------------:|:------------------:|
+| <img src="screenshots/admin/analytics.png" width="100%"> | <img src="screenshots/admin/manage_vendor.png" width="100%"> |
 
-<p align="center">
-  <img src="screenshots/admin/categories.png" width="45%" alt="Categories"/>
-  <img src="screenshots/admin/all_bookings.png" width="45%" alt="All Bookings"/>
-</p>
+<br>
+
+| **Categories** | **Bookings** |
+|:--------------:|:------------:|
+| <img src="screenshots/admin/categories.png" width="100%"> | <img src="screenshots/admin/all_bookings.png" width="100%"> |
+
+---
 ---
 
 # ✨ Features
