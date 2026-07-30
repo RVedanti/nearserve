@@ -1,30 +1,37 @@
 # 📍 NearServe — Hyperlocal Services Marketplace
 
 > A full-stack web application that connects users with verified local service providers in their city, with real-time booking management ,role-based dashboards, AI-powered platform ,OTP authentication, and live deployment.
+> 
 ---
+
 ## 🌐 Live Demo
 
 🔗 **Live Website:** https://nearserve-two.vercel.app/
 
+
 📂 **GitHub Repository:** https://github.com/RVedanti/nearserve
+
 ---
+
 # 📸 Application Screenshots
+
 ---
 ## 🏠 Homepage
 
 <p align="center">
-  <img src="screenshots/homepage/img1.png" width="42%">
-  <img src="screenshots/homepage/img2.png" width="42%">
-  <img src="screenshots/homepage/img3.png" width="42%">
+  <img src="screenshots/homepage/img1.png" width="32%">
+  <img src="screenshots/homepage/img2.png" width="32%">
+  <img src="screenshots/homepage/img3.png" width="32%">
 </p>
 
 ---
 
 ## 🔐 Authentication
 
+
 | **Signup** | **Login & Forgot Password** |
 |:----------:|:--------------------------:|
-| <img src="screenshots/features/signup.png" width="100%"> | <img src="screenshots/features/login.png" width="100%"><br><br><img src="screenshots/features/forgotpassword.png" width="100%"> |
+| <img src="screenshots/features/signup.png" width="80%" alt="Signup"/> | <img src="screenshots/features/login.png" width="80%" alt="Login"/><br><br><img src="screenshots/features/forgotpassword.png" width="80%" alt="Forgot Password"/> |
 
 ---
 
