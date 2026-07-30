@@ -11,21 +11,86 @@
 📂 **GitHub Repository:** https://github.com/RVedanti/nearserve
 
 ---
-# Test
 
-![Test](./screenshots/homepage/img1.png)
+---
+# 📸 Application Screenshots
+
+## 🏠 Homepage
+
+<p align="center">
+  <img src="screenshots/homepage/img1.png" width="32%" alt="Homepage 1"/>
+  <img src="screenshots/homepage/img2.png" width="32%" alt="Homepage 2"/>
+  <img src="screenshots/homepage/img3.png" width="32%" alt="Homepage 3"/>
+</p>
+
+---
+
+## 🔐 Authentication
+
+### Login • Signup • Forgot Password
+
+<p align="center">
+  <img src="screenshots/features/login.png" width="32%" alt="Login"/>
+  <img src="screenshots/features/signup.png" width="32%" alt="Signup"/>
+  <img src="screenshots/features/forgotpassword.png" width="32%" alt="Forgot Password"/>
+</p>
+
+---
+
+## 🤖 AI Chatbot
+
+<p align="center">
+  <img src="screenshots/features/chatbot.png" width="65%" alt="AI Chatbot"/>
+</p>
+
+---
+
+## 📅 Booking & Reviews
+
+<p align="center">
+  <img src="screenshots/features/booking.png" width="48%" alt="Booking"/>
+  <img src="screenshots/features/review.png" width="48%" alt="Review"/>
+</p>
+
+---
+
+## 👤 User Dashboard
+
+<p align="center">
+  <img src="screenshots/user/overviewpage.png" width="48%" alt="User Overview"/>
+  <img src="screenshots/user/mybookings.png" width="48%" alt="My Bookings"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/user/profilepage.png" width="48%" alt="User Profile"/>
+</p>
+
+---
+
+## 🧑‍🔧 Vendor Dashboard
+
+<p align="center">
+  <img src="screenshots/service_provider/list.png" width="48%" alt="Vendor List"/>
+  <img src="screenshots/service_provider/overview.png" width="48%" alt="Vendor Overview"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/service_provider/services.png" width="48%" alt="Vendor Services"/>
+  <img src="screenshots/service_provider/profile.png" width="48%" alt="Vendor Profile"/>
+</p>
+
 ---
 
 ## 👨‍💼 Admin Dashboard
 
 <p align="center">
-  <img src="./screenshots/admin/analytics.png" width="48%">
-  <img src="./screenshots/admin/managevendors.png" width="48%">
+  <img src="screenshots/admin/analytics.png" width="48%" alt="Admin Analytics"/>
+  <img src="screenshots/admin/managevendors.png" width="48%" alt="Manage Vendors"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/admin/categories.png" width="48%">
-  <img src="./screenshots/admin/all_bookings.png" width="48%">
+  <img src="screenshots/admin/categories.png" width="48%" alt="Categories"/>
+  <img src="screenshots/admin/all_bookings.png" width="48%" alt="All Bookings"/>
 </p>
 ---
 
