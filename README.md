@@ -36,7 +36,7 @@
 
 ## 🤖 AI Chatbot
 <p align="center">
-  <img src="screenshots/features/chatbot.png" width="35%" alt="AI Chatbot"/>
+  <img src="screenshots/features/chatbot.png" width="25%" alt="AI Chatbot"/>
 </p>
 ---
 
