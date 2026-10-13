@@ -5,6 +5,7 @@ import express from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
+import mongoose from 'mongoose'
 import connectDB from './config/db.js'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 
@@ -37,6 +38,19 @@ app.use(morgan('dev'))
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+
+// Keep-alive: called once a day by .github/workflows/keepalive.yml.
+// A real query keeps the free MongoDB Atlas cluster from being paused
+// after 30 days without connections.
+app.get('/api/keepalive', async (req, res) => {
+  try {
+    await mongoose.connection.db.admin().ping()
+    const users = await mongoose.connection.db.collection('users').estimatedDocumentCount()
+    res.json({ success: true, mongodb: 'ok', users })
+  } catch (error) {
+    res.status(503).json({ success: false, mongodb: 'error', message: error.message })
+  }
+})
 
 // API Routes
 app.use('/api/auth',       authRoutes)

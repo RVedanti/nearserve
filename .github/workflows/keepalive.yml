@@ -1,0 +1,30 @@
+name: Keep services alive
+
+# MongoDB Atlas pauses free (M0) clusters after 30 days without connections.
+# This job wakes the Render backend once a day and makes a real database
+# query, so the cluster is never paused. If it fails, GitHub emails the
+# repository owner.
+
+on:
+  schedule:
+    - cron: "45 3 * * *" # every day at 03:45 UTC (09:15 IST)
+  workflow_dispatch: # also lets you run it by hand from the Actions tab
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      BACKEND_URL: https://nearserve-backend-pvpd.onrender.com
+
+    steps:
+      - name: Wake the backend
+        run: |
+          # Free Render services take about a minute to start.
+          curl -s -o /dev/null --max-time 120 "$BACKEND_URL/" || true
+
+      - name: Touch MongoDB (via backend)
+        run: |
+          curl -fsS --retry 6 --retry-delay 20 --retry-all-errors --max-time 90 \
+            "$BACKEND_URL/api/keepalive"
