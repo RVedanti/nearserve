@@ -1,3 +1,19 @@
+
+// Manages and shares authentication information/functions across the frontend using React Context
+// React Context---- Share authentication state across the whole app..
+//Imagine the notebook It keeps information like:
+//Who is logged in? Is authentication still loading? How do we login? How do we logout?
+
+//AuthContext.jsx     
+   //  ↓
+// exports useAuth
+   //  ↓
+//ProtectedRoute.jsx
+   //  ↓
+ //calls useAuth()
+   //  ↓
+// gets user + loading
+
 import { createContext, useContext, useState, useEffect, useCallback } from 'react'
 import { authAPI } from '../services/api'
 
@@ -73,3 +89,19 @@ export const useAuth = () => {
   if (!ctx) throw new Error('useAuth must be used inside AuthProvider')
   return ctx
 }
+
+//User enters email/password
+//          ↓
+//Login Page
+  //         ↓
+//Axios API request
+  //         ↓
+//Spring/Node Backend
+  //         ↓
+//  JWT Token generated
+  //         ↓
+//Frontend stores token + user
+  //         ↓
+//AuthContext updates state
+  //         ↓
+//Protected pages become accessible

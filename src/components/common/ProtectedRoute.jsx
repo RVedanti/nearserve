@@ -1,9 +1,12 @@
+//Checks whether a user can access protected pages.
+//Prevents unauthorized users from opening protected pages.
+
 import { Navigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 import Spinner from './Spinner'
 
 export const ProtectedRoute = ({ children, roles }) => {
-  const { user, loading } = useAuth()
+  const { user, loading } = useAuth()//called 
   const location = useLocation()
 
   if (loading) return <Spinner full />

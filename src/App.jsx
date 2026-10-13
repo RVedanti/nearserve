@@ -1,12 +1,19 @@
+//The important idea:
+//App.jsx doesn't contain all the UI code for these pages.
+//It simply connects URLs to pages.
+//Central routing file that decides which page opens for each URL.
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { AuthProvider } from './context/AuthContext'
+import { AuthProvider } from './context/AuthContext'//AuthProvider = keeps login information available to the frontend.
 import { CityProvider } from './context/CityContext'
-import { ProtectedRoute, PublicOnlyRoute } from './components/common/ProtectedRoute'
+import { ProtectedRoute, PublicOnlyRoute } from './components/common/ProtectedRoute'//So ProtectedRoute acts like the security guard.
+//These are simply reusable UI pieces.
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
 import ForgotPasswordPage from './pages/auth/ForgotPasswordPage'
 import ChatBot from "./components/common/Chatbox"; 
 
+//code starts importing actual pages
 // Public pages
 import LandingPage from './pages/public/LandingPage'
 import VendorListingPage from './pages/public/VendorListingPage'
@@ -58,6 +65,7 @@ function App() {
 
             {/* Auth */}
             <Route path="/login" element={<PublicOnlyRoute><LoginPage /></PublicOnlyRoute>} />
+            {/*If the browser goes to /login, show LoginPage*/}
             <Route path="/register" element={<PublicOnlyRoute><RegisterPage /></PublicOnlyRoute>} />
             <Route path="/forgot-password" element={<PublicOnlyRoute><ForgotPasswordPage /></PublicOnlyRoute>} />
             {/* User Dashboard */}
